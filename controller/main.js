@@ -19,12 +19,6 @@ function homePage(req, res) {
   res.render("home", { products });
 }
 
-function productPage(req, res) {
-  let title = req.params.productTitle.replace(/-/g, " ");
-  let product = productModel.find((p) => p.title === title);
-  res.render("product", { product });
-}
-
 function aboutPage(req, res) {
   res.render("about");
 }

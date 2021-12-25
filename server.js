@@ -11,9 +11,6 @@ const PORT = 4000;
 app.set("view engine", "ejs");
 app.set("views", join(__dirname, "./views"));
 
-// body parser
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 // serve public files
 app.use(express.static(join(__dirname, "public")));
